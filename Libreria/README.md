@@ -9,10 +9,30 @@ The workspace contains two folders by default, where:
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+La idea es separar las responsabilidades en interfaces distintas, manteniendo cada una enfocada en una funcionalidad específica, y luego utilizar clases abstractas o concretas para agrupar implementaciones comunes.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+> **Funcionalidad del problema**
+>
+> 1.informacion básica
+>
+> 2. acceso indexado
+> 3. formatos de carga/descarga
+>
+> 4.visualizacion
+>
+> 5.generacion y moficacion
+>
+> 6.seleccion
+>
+> 7. filtrado
+> 8. copia independiente
+> 9. concatenación
+> 10. ordenamiento
+> 11. imputación
+> 12. muestreo
 
-## Dependency Management
+## Aprendizajes
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* **Interfaces** : Definen claramente las responsabilidades y funcionalidades específicas.
+* **Clases Abstractas** : Proporcionan implementaciones base y métodos comunes.
+* **Clases Concretas** : Implementan las interfaces y proporcionan las funcionalidades completas.
